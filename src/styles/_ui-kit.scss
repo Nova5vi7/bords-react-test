@@ -1,0 +1,265 @@
+@import "./_vars";
+
+.ui-kit {
+  background-color: $ui-kit-background;
+  &__container {
+    padding: 40px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .typography {
+    margin-bottom: 46px;
+  }
+
+  .colors {
+    margin-bottom: 43px;
+  }
+
+  &__title,
+  &__tytle-type-h3 {
+    font: $font-h3;
+  }
+
+  &__tytle-type-h1 {
+    font: $font-h1;
+  }
+
+  &__tytle-type-h2 {
+    font: $font-h2;
+  }
+
+  &__tytle-type-h3 {
+    margin: 25px 0;
+  }
+
+  &__tytle-type-h4 {
+    font: $font-h4;
+    margin-bottom: 21px;
+  }
+  &__text-size-20px {
+    font: $font-text-20px;
+    margin-bottom: 16px;
+  }
+
+  &__text-size-14px {
+    font: $font-text-14px;
+  }
+
+  &__colors {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  &__colors-wrap {
+    display: flex;
+  }
+
+  &__color-primary,
+  &__color-black,
+  &__color-white {
+    width: 200px;
+    height: 200px;
+    margin-right: 45px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__color-primary {
+    background-color: $primary;
+  }
+
+  &__color-black {
+    background-color: $black;
+  }
+
+  &__color-white {
+    background-color: $white;
+  }
+
+  &__form {
+    max-width: 1172px;
+    width: 100%;
+    margin-bottom: 90px;
+  }
+
+  .input {
+    margin-bottom: 50px;
+  }
+
+  &__form-wrap {
+    padding: 106px 56px;
+    background-color: $form-background;
+  }
+
+  &__button-primary {
+    margin-bottom: 90px;
+  }
+
+  .title-primary {
+    margin-bottom: 50px;
+  }
+
+  &__button-wrap {
+    text-align: center;
+  }
+
+  &__button-secondary {
+    margin-bottom: 90px;
+  }
+
+  .title-secondary {
+    margin-bottom: 50px;
+  }
+
+  .title-menu {
+    margin-bottom: 50px;
+  }
+
+  .menu {
+    background-color: $primary;
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+  }
+
+  .menu-item {
+    list-style-type: none;
+    background-color: inherit;
+    text-align: center;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .item {
+    background-color: inherit;
+    cursor: pointer;
+    font: $font-secondary-button;
+    color: $white;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.primary-button {
+  height: 100px;
+  padding: 10px 24px;
+  cursor: pointer;
+  max-height: 37px;
+  background-color: $primary;
+  border-radius: 200px;
+  font: $font-primary-button;
+  color: $white;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+
+  &:active {
+    box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.form {
+  // max-height: 62px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-input,
+.button-square {
+  font: $font-input-text;
+}
+
+.main-input {
+  width: 100%;
+  height: 100%;
+  max-width: 470px;
+  max-height: 62px;
+  padding: 15px 0 15px 30px;
+  border: 3px solid $white;
+  background: inherit;
+  box-sizing: border-box;
+  margin-right: 30px;
+  color: $white;
+}
+
+.button-square {
+  padding: 0 88.7px;
+  min-height: 62px;
+  cursor: pointer;
+  background-color: $primary;
+  color: $white;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+
+  &:active {
+    box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .ui-kit {
+    .button-square {
+      padding: 0;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 902px) {
+  .ui-kit {
+    .main-input {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .ui-kit {
+    .form {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 764px) {
+  .ui-kit {
+    &__colors-wrap {
+      display: block;
+    }
+
+    &__color-primary,
+    &__color-black,
+    &__color-white {
+      margin-right: 0;
+      margin-bottom: 45px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .ui-kit {
+    .main-input {
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+}

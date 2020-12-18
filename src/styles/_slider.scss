@@ -1,0 +1,156 @@
+@import "./_vars";
+@import "./_ui-kit";
+
+.slick-slider {
+  width: 100;
+  text-align: center;
+}
+
+.slick-slide {
+  width: 29.4% !important;
+}
+
+.slick-track {
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.test {
+  max-width: 100%;
+  width: 100%;
+}
+
+.slide {
+  width: 100%;
+  display: flex !important;
+  align-items: center;
+  // height: 100% !important;
+  text-align: left;
+
+  &__content-wrap {
+    margin-left: 11px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font: $font-text-20px;
+    margin-bottom: 2%;
+  }
+  &__description,
+  &__price-title {
+    font: $font-text-14px;
+  }
+
+  &__price-title {
+    color: $text-grey;
+  }
+
+  &__description {
+    margin-bottom: 15%;
+  }
+
+  &__price {
+    font: $font-input-text;
+    font-weight: $bold;
+    margin-bottom: 11%;
+  }
+
+  &__img-wrap {
+    min-width: 207px;
+    width: 50%;
+    // min-height: 450px;
+    height: 100%;
+    img {
+      min-height: 450px;
+      // width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .slide {
+    margin: 0 auto;
+
+    &__img-wrap {
+      img {
+        min-height: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .slide {
+    // max-width: 344px;
+
+    &__img-wrap {
+      img {
+        // width: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 600px) {
+//   .slide {
+//     flex-direction: column;
+//     text-align: center;
+
+//     &__img-wrap {
+//       min-height: 0;
+//       img {
+//         width: 25%;
+//         min-height: 0;
+//         margin: 0 auto;
+//       }
+//     }
+
+//     &__description {
+//       margin-bottom: 6%;
+//     }
+
+//     &__price {
+//       line-height: 20px;
+//       margin-bottom: 4%;
+//     }
+//   }
+// }
+
+@media only screen and (max-width: 600px) {
+  .slide {
+    flex-direction: column;
+
+    &__img-wrap {
+      img {
+        max-height: 200px;
+        height: 100%;
+      }
+    }
+
+    &__description,
+    &__price {
+      margin-bottom: 20px;
+    }
+
+    &__img-wrap {
+      margin-bottom: 20px;
+    }
+
+    &__content-wrap {
+      text-align: center;
+      height: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .slide {
+    &__img-wrap {
+      min-width: 0;
+    }
+  }
+}

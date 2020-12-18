@@ -1,0 +1,32 @@
+// colors
+$primary: #ff7062;
+$primary-hover: #dd6256;
+$primary-opacity: 0.5;
+$black: #000000;
+$white: #ffffff;
+$ui-kit-background: #f9f0f0;
+$form-background: #303536;
+$text-grey: #646464;
+//
+
+// font-family
+$main-font: "Mulish";
+//
+
+//font-weight
+$bold-black: 900;
+$bold: bold;
+$regular: normal;
+$light: 300;
+//
+
+// font-size
+$font-h1: normal $bold-black 110px/138px $main-font;
+$font-h2: normal $bold-black 45px/56px $main-font;
+$font-h3: normal $bold 35px/44px $main-font;
+$font-h4: normal $regular 35px/44px $main-font;
+$font-text-20px: normal $light 20px/25px $main-font;
+$font-text-14px: normal $light 14px/18px $main-font;
+$font-input-text: normal $regular 25px/31px $main-font;
+$font-primary-button: normal $regular 13px/16px $main-font;
+$font-secondary-button: normal $regular 20px/25px $main-font;

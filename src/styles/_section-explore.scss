@@ -1,0 +1,39 @@
+@import "_vars";
+
+.section-explore {
+  padding: 122px 0 90px;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    max-width: 61%;
+    width: 100%;
+  }
+
+  &__title {
+    font: $font-h1;
+    margin-bottom: 22px;
+  }
+
+  &__cart {
+    max-width: 370px;
+    width: 100%;
+  }
+
+  .bg-wrap {
+    width: 100%;
+  }
+
+  &__title-wrap {
+    background-image: url(../images/img-cart-one.png);
+    background-repeat: no-repeat;
+    height: 566px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__cart-title {
+    font: $font-h2;
+  }
+}

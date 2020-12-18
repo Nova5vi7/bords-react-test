@@ -1,0 +1,6 @@
+@import "./mixins/_font-face.scss";
+
+@include font-face("Mulish", "../../fonts/mulish-regular/Mulish-Regular");
+@include font-face("Mulish", "../../fonts/mulish-bold/Mulish-Bold", bold);
+@include font-face("Mulish", "../../fonts/mulish-light/Mulish-Light", 300);
+@include font-face("Mulish", "../../fonts/mulish-black/Mulish-Black", 900);

@@ -1,0 +1,125 @@
+@import "./_vars";
+
+.categories {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    // max-width: 1170px;
+    // max-height: 83.33%;
+    min-height: 83.33%;
+    // height: 100%;
+    width: 61%;
+    display: grid;
+    grid-template-columns: 57.2% 40.1%;
+    grid-template-rows: 100%;
+    grid-column-gap: 2.7%;
+  }
+
+  &__title {
+    font: $font-h1;
+    line-height: 11vh;
+    position: absolute;
+    font-size: 5.88vw;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  .bords-title {
+    top: 50%;
+    transform: translateY(-50%);
+    color: $white;
+  }
+
+  &__wraper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    // grid-template-rows: repeat(2, 48%);
+    grid-row-gap: 3.3%;
+  }
+
+  &__wrap-male,
+  &__wrap-female,
+  &__wrap-bord {
+    position: relative;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__wrap-bord {
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__wrap-male,
+  &__wrap-female {
+    padding-top: 65%;
+  }
+  &__wrap-bord {
+    background-color: $primary;
+    padding-top: 191%;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .categories {
+    &__title,
+    .bords-title {
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 12vw;
+    }
+
+    &__container {
+      width: 100%;
+      //   height: 100%;
+      grid-template-rows: 1fr;
+      // grid-auto-flow: column;
+    }
+
+    &__wrap-female,
+    &__wrap-male {
+      padding-top: 57%;
+    }
+
+    &__wrap-bord {
+      padding-top: 82%;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .categories {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__wraper {
+      display: block;
+    }
+
+    &__wrap-male,
+    &__wrap-female,
+    &__wrap-bord {
+      padding-top: 40%;
+    }
+
+    &__wrap-bord {
+      padding-top: 40%;
+    }
+  }
+}

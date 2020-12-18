@@ -1,0 +1,15 @@
+@import "./_vars";
+
+.intro {
+  height: 100vh;
+  background-color: $primary;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  img {
+    width: 69%;
+    transform: translateY(10%);
+  }
+}
